@@ -68,8 +68,6 @@ atoms —> molecules —> organisms —> templates --> pages
 <img width="1219" alt="footer" src="https://user-images.githubusercontent.com/28756358/147476583-2acad69f-6bd2-4cb8-b739-f3fe4326ac9b.png">
 
 
-<br/>
-<br/>
 
 ### 📌 12월 27일 (3) - 무심코 지나간 빌드 오류..
 
