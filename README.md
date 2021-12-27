@@ -64,6 +64,18 @@ atoms —> molecules —> organisms —> templates --> pages
 
 <img width="1146" alt="code" src="https://user-images.githubusercontent.com/28756358/147472890-10f4beef-01c2-4dd1-a965-cc386fd19f5f.png">
 
+<새로운 Footer>
+<img width="1219" alt="footer" src="https://user-images.githubusercontent.com/28756358/147476583-2acad69f-6bd2-4cb8-b739-f3fe4326ac9b.png">
+
+
+<br/>
+<br/>
+
+### 📌 12월 27일 (3) - 무심코 지나간 빌드 오류..
+
+- 배포 중인 테스트 사이트를 들어가보니 최근 코드가 빌드되어 있지 않은 것을 발견하고는 gatsby cloud에 들어가보았다.
+- 미처 확인하지 않은 내 잘못이 크지만 오늘 아침 첫 커밋 때부터 빌드에 실패 중인 상태였다.. (gatsby cloud는 빌드에 실패하면 빌드에 성공했던 마지막 빌드로 사이트를 배포한다...)
+- 아무튼 문제는 리팩토링 과정중에서 바꿔야하는 네이밍을 전부다 바꾸지 않았던 것... 타입과 관련된 이름의 문제였기 때문에 개발중에는 문제가 되지 않았던 것으로 보인다..
 
 
 
