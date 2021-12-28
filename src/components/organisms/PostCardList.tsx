@@ -12,20 +12,16 @@ type PostCardListProps = {
 const PostCardListWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
-  width: 1200px;
+  grid-gap: 20px;
+  max-width: 1044px;
   margin: 0 auto;
-  padding: 50px 30px 100px;
+  padding: 50px 20px 100px;
+  width: 100%;
 
-  @media (max-width: 1200px) {
-    width: 100%;
-    padding: 50px 30px;
-  }
-
-  @media (max-width: 668px) {
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
     width: 100%;
-    padding: 50px 30px;
+    grid-gap: 40px;
   }
 `
 
