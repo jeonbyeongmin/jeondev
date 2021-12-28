@@ -90,5 +90,6 @@ atoms —> molecules —> organisms —> templates --> pages
 ![반응형 웹](https://user-images.githubusercontent.com/28756358/147541495-b3708c56-ffcf-4d92-bc09-25648ddd1e1e.png)
 
 - 전체적인 width를 줄였다. 일반적인 데스크탑으로 보기에 너무 넓었다고 판단하였다.
-- 새로운 컨텐츠 스타일을 적용하였다. 결과물은 아래와 같다.
+- 새로운 마크다운 컨텐츠 스타일을 적용하였다. 결과물은 아래와 같다.
 
+<img width="1529" alt="스크린샷 2021-12-28 16 53 22" src="https://user-images.githubusercontent.com/28756358/147542441-e9b203fc-82cf-4b2c-8d62-0df7a0a874ce.png">
