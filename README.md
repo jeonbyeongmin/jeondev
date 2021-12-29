@@ -101,6 +101,11 @@ atoms —> molecules —> organisms —> templates --> pages
 
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ### 📌 12월 28일 - 첫 글 작성. Gatsby의 특징과 블로그를 Gatsby로 개발한 이유를 작성하였다.
 
