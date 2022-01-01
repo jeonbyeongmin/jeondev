@@ -30,19 +30,12 @@ const PostCardList: FunctionComponent<PostCardListProps> = ({
   posts,
 }) => {
   const { containerRef, postList } = useInfiniteScroll(selectedCategory, posts)
+
   return (
     <PostCardListWrapper ref={containerRef}>
-      {postList.map(
-        ({
-          node: {
-            id,
-            fields: { slug },
-            frontmatter,
-          },
-        }: PostType) => (
-          <PostCard {...frontmatter} link={slug} key={id} />
-        ),
-      )}
+      {postList.map(({ id, slug, frontmatter }: PostType) => (
+        <PostCard {...frontmatter} link={slug} key={id} />
+      ))}
     </PostCardListWrapper>
   )
 }

@@ -8,16 +8,14 @@ import PostContent from 'components/organisms/PostContent'
 import PostHeader from 'components/organisms/PostHeader'
 
 export type PostPageItemType = {
-  node: {
-    html: string
-    frontmatter: PostFrontmatterType
-  }
+  body: string
+  frontmatter: PostFrontmatterType
 }
 
 type PostProps = {
   data: {
-    allMarkdownRemark: {
-      edges: PostPageItemType[]
+    allMdx: {
+      nodes: PostPageItemType[]
     }
   }
   location: {
@@ -27,25 +25,23 @@ type PostProps = {
 
 const PostTemplate: FunctionComponent<PostProps> = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMdx: { nodes },
   },
   location: { href },
 }) => {
   const {
-    node: {
-      html,
-      frontmatter: {
-        title,
-        summary,
-        date,
-        categories,
-        thumbnail: {
-          childImageSharp: { gatsbyImageData },
-          publicURL,
-        },
+    frontmatter: {
+      title,
+      summary,
+      date,
+      categories,
+      thumbnail: {
+        childImageSharp: { gatsbyImageData },
+        publicURL,
       },
     },
-  } = edges[0]
+    body,
+  } = nodes[0]
 
   return (
     <Layout title={title} description={summary} url={href} image={publicURL}>
@@ -55,7 +51,7 @@ const PostTemplate: FunctionComponent<PostProps> = ({
         categories={categories}
         thumbnail={gatsbyImageData}
       />
-      <PostContent html={html} />
+      <PostContent body={body} />
     </Layout>
   )
 }
@@ -64,23 +60,21 @@ export default PostTemplate
 
 export const queryMarkdownDataBySlug = graphql`
   query queryMarkdownDataBySlug($slug: String) {
-    allMarkdownRemark(filter: { fields: { slug: { eq: $slug } } }) {
-      edges {
-        node {
-          html
-          frontmatter {
-            title
-            summary
-            date(formatString: "YYYY.MM.DD.")
-            categories
-            thumbnail {
-              childImageSharp {
-                gatsbyImageData
-              }
-              publicURL
+    allMdx(filter: { fields: { slug: { eq: $slug } } }) {
+      nodes {
+        frontmatter {
+          title
+          summary
+          date(formatString: "YYYY.MM.DD.")
+          categories
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData
             }
+            publicURL
           }
         }
+        body
       }
     }
   }
