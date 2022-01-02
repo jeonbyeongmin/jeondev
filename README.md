@@ -174,3 +174,19 @@ atoms —> molecules —> organisms —> templates --> pages
 <br/>
 <br/>
 
+### 📌 1월 2일 - profile 페이지와 브라우저 동작 과정에 대한 글 작성
+- profile 페이지는 부끄럽지만 아직 소개할 것이 많이 없기 때문에 간략하게 만들었다.
+- 프론트의 전반에 대한 이해를 갖추기 위해서 근본적인 지식부터 다지기로 했다.
+- 먼저 브라우저 동작 과정에 대해 설명한 글을 공부를 위해 그대로 따라 쳐보았다.
+- 내일 마저 공부한 뒤 나름대로 정리하고 수정할 계획이다.
+
+<br/>
+
+<img width="1097" alt="스크린샷 2022-01-02 15 39 00" src="https://user-images.githubusercontent.com/28756358/147868357-2b31dbab-c098-4d08-9220-2df52becdedc.png">
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
