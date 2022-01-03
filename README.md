@@ -178,7 +178,7 @@ atoms —> molecules —> organisms —> templates --> pages
 - profile 페이지는 부끄럽지만 아직 소개할 것이 많이 없기 때문에 간략하게 만들었다.
 - 프론트의 전반에 대한 이해를 갖추기 위해서 근본적인 지식부터 다지기로 했다.
 - 먼저 브라우저 동작 과정에 대해 설명한 글을 공부를 위해 그대로 따라 쳐보았다.
-- 내일 마저 공부한 뒤 나름대로 정리하고 수정할 계획이다.
+- 이후 마저 공부한 뒤 나름대로 정리하고 수정할 계획이다.
 
 <br/>
 
@@ -189,4 +189,21 @@ atoms —> molecules —> organisms —> templates --> pages
 <br/>
 <br/>
 
+
+### 📌 1월 3일 - 다크 모드 구현중.... 브라우저가 렌더링하는 과정을 자세히 알 필요가 있을 듯 하다.
+- 상태관리 라이브러리는 recoil을 썼다.
+- develop에서는 문제 없던 것이 build시에  window is not defined. 에러가 난다.
+- 그 이유는 서버 사이드에서 실행되던 develop은 문제가 없지만 nodejs 환경인 build time에는 
+- window와 같은 브라우저 전역의 API를 사용할 수 없다는 것...
+- typeof window !== 'undefined' 를 통해 에러 자체는 해결할 수 있었지만
+- 다크 모드 자체에는 심각한 오류가 있었다.
+- 내가 구현한 다크모드의 디폴트는 localstorage, 없다면 system mode 인데
+- localstorage가 dark라고 설정되어 있을 때, 첫 렌더링에 바로 다크 모드가 되지 않고 페이지를 옮기면 적용이 된다.
+- 즉 build 시점에 localstorage에 대한 정보가 없으니 발생하는 문제인 것이다.
+- 이 부분은 gatsby가 지원하는 gatsby-ssr.js를 통해 해결할 수 있다고 한다.
+
+<br/>
+<br/>
+<br/>
+<br/>
 
