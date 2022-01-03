@@ -199,7 +199,7 @@ atoms —> molecules —> organisms —> templates --> pages
 - 다크 모드 자체에는 심각한 오류가 있었다.
 - 내가 구현한 다크모드의 디폴트는 localstorage, 없다면 system mode 인데
 - localstorage가 dark라고 설정되어 있을 때, 첫 렌더링에 바로 다크 모드가 되지 않고 페이지를 옮기면 적용이 된다.
-- 즉 build 시점에 localstorage에 대한 정보가 없으니 발생하는 문제인 것이다.
+- 첫 렌더링 시점에 localstorage에 대한 정보가 없으니 발생하는 문제인 것 같다.
 - 이 부분은 gatsby가 지원하는 gatsby-ssr.js를 통해 해결할 수 있다고 한다.
 
 <br/>
