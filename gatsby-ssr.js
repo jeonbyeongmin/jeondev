@@ -1,5 +1,4 @@
 import React from 'react'
-import { RecoilRoot } from 'recoil'
 
 export const onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents([
@@ -29,18 +28,10 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
 
           let darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-          darkQuery.addListener(function(e) {
-            window.__setPreferredTheme(e.matches ? 'dark' : 'light')
-          });
-
           setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
         })();
         `,
       },
     }),
   ])
-}
-
-export const wrapRootElement = ({ element, props }) => {
-  return <RecoilRoot {...props}>{element}</RecoilRoot>
 }
