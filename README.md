@@ -253,6 +253,11 @@ CSS custom property : https://developer.mozilla.org/ko/docs/Web/CSS/Using_CSS_cu
 - 하지만 문제가 발생했다고 해서 기술을 이해해보려 하기 전에 무작정 구글에 검색해보는 것은 좋지 않은 습관이라는 것을 깨달았다.
 - 조만간에 react 문서 제대로 읽어볼 생각인데 이때 hydrate에 대해 더 자세히 알아보고자 한다
 
+
+<img width="1341" alt="스크린샷 2022-01-05 18 33 28" src="https://user-images.githubusercontent.com/28756358/148194914-be110c29-0148-4fd7-9d27-7f9181d9ce96.png">
+
+<img width="1422" alt="스크린샷 2022-01-05 18 33 22" src="https://user-images.githubusercontent.com/28756358/148194898-0cdfb195-4aaf-4aef-b973-55873d7018a2.png">
+
 <br/>
 <br/>
 <br/>
